@@ -12,7 +12,7 @@ This is all run on Ubuntu Server 19.04, so I can't gaurantee it'll work on diffe
 
 #### 1: Clone the repository, and other commands
 First, type this command in your terminal: 
-`git clone https://github.com/URL.git`
+`git clone https://github.com/nrbuster/NateHomeServer`
 This will copy the repository to the folder you're in (likely your home/username folder).
 We also need to run some necessary docker commands. We need to create a network that traefik will use to talk and see other docker images. In this case, it's called web. The command for this is:
  `docker network create web`
