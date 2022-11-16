@@ -1,6 +1,9 @@
 # NateHomeServer
 This is my collection of Docker Compose files I use to run my simple home server. It runs off of traefik, Nextcloud, and Jellyfin at the moment, but I (or you,) can add simply enough by just adding to the services docker-compose file.
 
+# IMPORTANT
+At the moment this should be considered deprecated. This is due to major version changes with Traefik and my new homelab is running through a router with some horrible NAT Loopback issues that AT&T doesn't feel like fixing. I still run these services, but now without Traefik being my reverse proxy of choice. I've since just resorted to using a simple wireguard server to connect into my home network, and therefore these services, from an outside location. It's dirty, but it works.
+
 ## Description
 I'll go through some quick details about why I'm running what I am. Traefik is used to handle the reverse-proxy side of things, which means you can connect to different services by using different sub-domains (nc.domain.com will go to a diffent service than media.domain.com). Traefik is easy to install with docker-compose and, so far, has kept up with what I've installed in docker. I'm still new to Docker, so if I'm being a bit inefficient, please let me know.
 
